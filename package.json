@@ -1,0 +1,30 @@
+{
+  "name": "sensible-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot/sensible-monitor",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot/sensible-monitor"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "/opt/data/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c3pobot/sensible-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c3pobot/sensible-monitor/issues"
+  },
+  "homepage": "https://github.com/c3pobot/sensible-monitor#readme",
+  "dependencies": {
+    "mqtt": "^5.16.1"
+  }
+}
